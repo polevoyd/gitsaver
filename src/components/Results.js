@@ -11,14 +11,13 @@ const Results = (props) => {
         const previousDay = start.getDay();
         const correctDay = start.setDate(start.getDate()-previousDay)
         const toDate = new Date(correctDay)
-
-        
         const a = toDate.setDate(toDate.getDate() + index);
         const b = new Date(a);
 
         console.log(b)
 
 
+        
         return b;
     }
     
