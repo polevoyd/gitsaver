@@ -14,34 +14,27 @@ const Results = (props) => {
         const a = toDate.setDate(toDate.getDate() + index);
         const b = new Date(a);
 
-        console.log(b)
+        // console.log(b)
 
 
-        
+
         return b;
     }
     
-    // const scriptCalendar = props.board.map((e, i) => {
+    const scriptCalendar = props.board.map((e, i) => {
 
-    //     const startDate = indexToDate();
-    //     const day = {
-    //         // i - days offset from starting day
-    //         // e - intensity of colors (number to amount of commits)
+        const date = indexToDate(i).toString();
+        
+        
+        const scrpt = `git add . && git commit -m 'gitsaver' --date='${date.toString()}'`
+        
 
-    //     }
+        // console.log(startingDay())
 
-    //     // console.log(startingDay())
+        return scrpt;
+    })
 
-    //     return e;
-    // })
-
-    indexToDate(0);
-    indexToDate(1);
-    indexToDate(20);
-    indexToDate(40);
-    indexToDate(300);
-
-    // console.log(scriptCalendar)
+    console.log(scriptCalendar)
 
     return(
         <textarea className="results" defaultValue={props.board}>
