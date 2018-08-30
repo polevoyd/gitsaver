@@ -21,7 +21,7 @@ const Results = (props) => {
         return b;
     }
     
-    const scriptCalendar = props.board.map((e, i) => {
+    const scriptsArray = props.board.map((e, i) => {
 
         const date = indexToDate(i).toString();
         
@@ -34,7 +34,7 @@ const Results = (props) => {
         return scrpt;
     })
 
-    console.log(scriptCalendar)
+    console.log(scriptsArray)
 
     return(
         <textarea className="results" defaultValue={props.board}>
