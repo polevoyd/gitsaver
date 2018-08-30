@@ -33,7 +33,7 @@ const Results = (props) => {
         // 1 - 1
         // 2 - 13 contributions
         // 3 - 26 contributions
-        // 4 - 35
+        // 4 - 37
         // console.log(startingDay())
 
 
