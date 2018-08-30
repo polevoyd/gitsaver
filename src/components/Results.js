@@ -31,7 +31,7 @@ const Results = (props) => {
 
         // 0 - 0 contributions
         // 1 - 13 contributions
-        // 2 -
+        // 2 - 15
         // console.log(startingDay())
 
 
