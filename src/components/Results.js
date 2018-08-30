@@ -29,8 +29,9 @@ const Results = (props) => {
         const scrpt = `git add . && git commit -m 'gitsaver' --date='${date.toString()}'`
         
 
-        // 0 - 0
-        // 1 - 13
+        // 0 - 0 contributions
+        // 1 - 13 contributions
+        // 2 -
         // console.log(startingDay())
 
 
