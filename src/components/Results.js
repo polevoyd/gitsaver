@@ -30,7 +30,7 @@ const Results = (props) => {
         
 
         // 0 - 0
-        // 1 - 12
+        // 1 - 13
         // console.log(startingDay())
 
 
