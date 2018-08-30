@@ -30,9 +30,9 @@ const Results = (props) => {
         
 
         // 0 - 0
-        // 1 - 
+        // 1 - 3
         // console.log(startingDay())
-        
+
 
         return scrpt;
     })
