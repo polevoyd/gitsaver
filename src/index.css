@@ -67,7 +67,7 @@
                          calc(var(--week-width) * 5);
 }
 
-.days,
+
 .squares {
   display: grid;
   grid-gap: var(--square-gap);
