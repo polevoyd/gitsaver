@@ -1,5 +1,5 @@
 * {
-  /* outline: 1px solid lightcoral; */
+  outline: 1px solid lightcoral;
 }
 
 .welcome {
@@ -22,7 +22,8 @@
 
 .board {
 
-  
+  display: block;
+  margin: 0 auto;
 }
 .board-cell {
   height: 10px;
@@ -32,7 +33,6 @@
 }
 
 /* Article - https://bitsofco.de/github-contribution-graph-css-grid/ */
-
 /* Grid-related CSS */
 
 :root {
@@ -41,8 +41,7 @@
   --week-width: calc(var(--square-size) + var(--square-gap));
 }
 
-.months { grid-area: months; }
-.days { grid-area: days; }
+
 .squares { grid-area: squares; }
 
 .graph {
