@@ -1,5 +1,5 @@
 * {
-  outline: 1px solid lightcoral;
+  /* outline: 1px solid lightcoral; */
 }
 
 .welcome {
@@ -53,18 +53,18 @@
 
 .months {
   display: grid;
-  grid-template-columns: calc(var(--week-width) * 4) /* Jan */
-                         calc(var(--week-width) * 4) /* Feb */
-                         calc(var(--week-width) * 4) /* Mar */
-                         calc(var(--week-width) * 5) /* Apr */
-                         calc(var(--week-width) * 4) /* May */
-                         calc(var(--week-width) * 4) /* Jun */
-                         calc(var(--week-width) * 5) /* Jul */
-                         calc(var(--week-width) * 4) /* Aug */
-                         calc(var(--week-width) * 4) /* Sep */
-                         calc(var(--week-width) * 5) /* Oct */
-                         calc(var(--week-width) * 4) /* Nov */
-                         calc(var(--week-width) * 5) /* Dec */;
+  grid-template-columns: calc(var(--week-width) * 4)
+                         calc(var(--week-width) * 4)
+                         calc(var(--week-width) * 4)
+                         calc(var(--week-width) * 5)
+                         calc(var(--week-width) * 4)
+                         calc(var(--week-width) * 4)
+                         calc(var(--week-width) * 5)
+                         calc(var(--week-width) * 4)
+                         calc(var(--week-width) * 4)
+                         calc(var(--week-width) * 5)
+                         calc(var(--week-width) * 4)
+                         calc(var(--week-width) * 5);
 }
 
 .days,
@@ -81,17 +81,6 @@
 
 
 /* Other styling */
-
-body {
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
-  font-size: 12px;
-}
-
-.graph {
-  padding: 20px;
-  border: 1px #e1e4e8 solid;
-  margin: 20px;
-}
 
 .days li:nth-child(odd) {
   visibility: hidden;
