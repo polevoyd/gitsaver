@@ -1,5 +1,5 @@
 * {
-  outline: 1px solid lightcoral;
+  /* outline: 1px solid lightcoral; */
 }
 
 .welcome {
@@ -17,13 +17,13 @@
 
 
 .board-area {
-
+  margin: 10vw auto;
 }
 
 .board {
 
   display: block;
-  margin: 10vw auto;
+  margin: 1vw auto;
   width: 600px;
 }
 .board-cell {
@@ -43,15 +43,11 @@
 
 }
 
-/* 
-background-color: #ebedf0;
-background-color: #c6e48b;
-background-color: #7bc96f;
-background-color: #196127; 
-*/
 
 .color-switch {
-  
+  width: 600px;
+  display: block;
+  margin: 0 auto;
 }
 
 .radio {
@@ -60,3 +56,29 @@ background-color: #196127;
   float: right;
   margin: 2px 2px;
 }
+
+#radio1 {
+  background-color: #196127
+}
+
+#radio2 {
+  background-color: #239a3b
+}
+
+#radio3 {
+  background-color: #7bc96f;
+}
+
+#radio4 {
+  background-color: #c6e48b;
+}
+
+#radio5 {
+  background-color: #ebedf0
+}
+/* 
+
+background-color: #c6e48b;
+background-color: #7bc96f;
+background-color: #196127; 
+*/
