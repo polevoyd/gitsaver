@@ -38,7 +38,7 @@
 :root {
   --square-size: 10px;
   --square-gap: 2px;
-  --week-width:  var(--square-gap);
+  --week-width: calc(var(--square-size) + var(--square-gap));
 }
 
 .months { grid-area: months; }
