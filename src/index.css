@@ -1,5 +1,5 @@
 * {
-  /* outline: 1px solid lightcoral; */
+  outline: 1px solid lightcoral;
 }
 
 .welcome {
@@ -38,11 +38,7 @@
 :root {
   --square-size: 10px;
   --square-gap: 2px;
-  --week-width: calc(var(--square-size) + var(--square-gap));
 }
-
-
-.squares { grid-area: squares; }
 
 .graph {
   display: inline-grid;
@@ -74,6 +70,7 @@
   grid-template-rows: repeat(7, var(--square-size));
   grid-auto-flow: column;
   grid-auto-columns: var(--square-size);
+  grid-area: squares;
 }
 
 /* Other styling */
