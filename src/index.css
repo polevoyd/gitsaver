@@ -79,10 +79,10 @@
   background-color: #ebedf0
 }
 
-
 .results {
   width: 600px;
   height: 400px;
   display: block;
   margin: 0 auto;
+  resize: none;
 }
