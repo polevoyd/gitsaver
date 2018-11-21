@@ -46,8 +46,7 @@
 
 .graph {
   display: inline-grid;
-  grid-template-areas: "empty months"
-                       "days squares";
+  grid-template-areas: "days squares";
   grid-template-columns: auto 1fr;
   grid-gap: 10px;
 }
