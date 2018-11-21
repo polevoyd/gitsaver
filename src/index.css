@@ -40,13 +40,6 @@
   --square-gap: 2px;
 }
 
-.graph {
-  display: inline-grid;
-  grid-template-areas: "days squares";
-  grid-template-columns: auto 1fr;
-  grid-gap: 10px;
-}
-
 .months {
   display: grid;
   grid-template-columns: calc(var(--week-width) * 4)
