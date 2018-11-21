@@ -19,3 +19,17 @@
 .board-area {
   height: 30vh;
 }
+
+.board {
+  display: block;
+  margin: 0 auto;
+  width: 669px;
+  height: 104px;
+  display: grid;
+  
+}
+.board-cell {
+  height: 10px;
+  width: 10px;
+  background-color: #ebedf0;
+}
