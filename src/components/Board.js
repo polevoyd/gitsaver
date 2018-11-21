@@ -3,12 +3,13 @@ import BoardCell from './BoardCell';
 
 const Board = () => {
 
-    const arrayOfCells = new Array(54);
+    const arrayOfCells = new Array(54).fill(0).map(e => <BoardCell></BoardCell>)
+    console.log(arrayOfCells)
     return(
         <div className="board">
             {/* loop that renders full board  */}
-            {arrayOfCells.map(e => <BoardCell/>)}
-            <BoardCell/>
+            
+            {arrayOfCells}
         </div>
     );
 }
