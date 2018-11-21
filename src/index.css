@@ -1,5 +1,5 @@
 * {
-  outline: 1px solid lightcoral;
+  /* outline: 1px solid lightcoral; */
 }
 
 .welcome {
@@ -45,10 +45,11 @@
 
 
 .color-switch {
-  width: 600px;
+  /* width: 100px; */
   display: block;
   margin: 0 auto;
   color: #24292e;
+  width: 70px;
 }
 
 .radio {
