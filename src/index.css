@@ -23,7 +23,8 @@
 .board {
 
   display: block;
-  margin: 0 auto;
+  margin: 10vw auto;
+  width: 600px;
 }
 .board-cell {
   /* height: 10px; */
@@ -48,3 +49,14 @@ background-color: #c6e48b;
 background-color: #7bc96f;
 background-color: #196127; 
 */
+
+.color-switch {
+  
+}
+
+.radio {
+  height: 10px;
+  width: 10px;
+  float: right;
+  margin: 2px 2px;
+}
