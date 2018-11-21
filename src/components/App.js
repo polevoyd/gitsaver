@@ -1,6 +1,7 @@
 import React from 'react';
 import Welcome from './Welcome';
 import Board from './BoardArea';
+import Results from './Results';
 
 class App extends React.Component {
   render(){
@@ -8,6 +9,7 @@ class App extends React.Component {
       <div>
         <Welcome/>
         <Board />
+        <Results />
       </div>
     );
   }
