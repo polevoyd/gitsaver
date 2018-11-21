@@ -12,7 +12,6 @@ const Welcome = () => {
                 text text text text text text text text text text text text text
                 text text text text text text text text text text text text text
                 text text text text text text text text text text text text text
-                
             </p>
         </div>
     );
