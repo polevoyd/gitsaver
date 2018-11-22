@@ -15,19 +15,6 @@ const Board = (props) => {
         )
     })
     // console.log(props)
-
-    const previousYear = new Date().getFullYear()-1;
-    const inSeconds = new Date().setFullYear(previousYear)
-    const start = new Date(inSeconds)
-
-    const previousDay = start.getDay();
-    const correctDay = start.setDate(start.getDate()-previousDay)
-    const toDate = new Date(correctDay)
-
-
-
-
-    // console.log(toDate)
     
     return(
         <div className="board">
