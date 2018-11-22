@@ -12,14 +12,9 @@ const App = () => {
   const [board, setBoard] = useState(currentBoard);
 
   const updateBoard = (index, value) => {
-
-    
     let copy = board;
     copy[index] = value;
-    
-    console.log(copy);
     setBoard(copy);
-
   }
 
     return(
