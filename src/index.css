@@ -57,34 +57,34 @@
   width: 70px;
 }
 
-.radio {
+.color {
   height: 10px;
   width: 10px;
   float: right;
   margin: 2px 2px;
 }
 
-.radio:hover {
+.color:hover {
   outline: 1px solid orange;
 }
 
-#radio1 {
+#color1 {
   background-color: #196127
 }
 
-#radio2 {
+#color2 {
   background-color: #239a3b
 }
 
-#radio3 {
+#color3 {
   background-color: #7bc96f;
 }
 
-#radio4 {
+#color4 {
   background-color: #c6e48b;
 }
 
-#radio5 {
+#color5 {
   background-color: #ebedf0
 }
 

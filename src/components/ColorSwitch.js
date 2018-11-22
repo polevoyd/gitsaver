@@ -6,11 +6,11 @@ const ColorSwitch = () => {
     return(
         <div>
             <form className="color-switch">
-                <div className="radio" id="radio1" onClick={e => console.log(e.target)}></div>
-                <div className="radio" id="radio2"></div>
-                <div className="radio" id="radio3"></div>
-                <div className="radio" id="radio4"></div>
-                <div className="radio" id="radio5"></div>
+                <div className="color" id="color1"></div>
+                <div className="color" id="color2"></div>
+                <div className="color" id="color3"></div>
+                <div className="color" id="color4"></div>
+                <div className="color" id="color5"></div>
             </form>
         </div>
     );
