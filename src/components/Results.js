@@ -28,6 +28,7 @@ const Results = (props) => {
         const date = indexToDate(i).toString();
         const scripts = new Array(e).fill(date);
         
+        
         // const scrpt = `git add . && git commit -m 'gitsaver' --date='${date}'`
         
         // 0 - 0 contributions
@@ -39,9 +40,12 @@ const Results = (props) => {
         
         // console.log(startingDay())
 
+        
 
         return scripts;
-    })
+    }).reduce((curr, acc) => {
+        return curr ? acc.concat(curr) : acc;
+    }, [])
 
     console.log(scriptsArray)
 
