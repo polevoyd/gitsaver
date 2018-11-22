@@ -13,8 +13,10 @@ const App = () => {
 
   const updateBoard = (index, value) => {
 
+    
+    let copy = board;
+    copy[index] = value;
     console.log(index, value);
-
     // setCell(board[index] = value)
   }
 

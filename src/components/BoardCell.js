@@ -18,13 +18,30 @@ const BoardCell = (props) => {
                 break;
         }    
     }
+
+    const colorToNum = color => {
+        switch (color) {
+            case '#ebedf0':
+                return 0;
+            case '#c6e48b':
+                return 1;
+            case '#7bc96f': 
+                return 2;
+            case '#239a3b':
+                return 3;
+            case '#196127':
+                return 4;
+            default:
+                break;
+        }    
+    }
     // console.log(props)
 
     return(
         <div 
             style={{backgroundColor: numToColor(props.board[props.index])}}
             className={`board-cell ${props.index}`}
-            onClick={e => props.updateBoard(props.index, props.color)}>
+            onClick={e => props.updateBoard(props.index, colorToNum(props.color))}>
         </div>
     );
 }
