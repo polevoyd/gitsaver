@@ -26,10 +26,15 @@
   margin: 1vw auto;
   width: 600px;
 }
+
 .board-cell {
   /* height: 10px; */
   /* width: 10px; */
   background-color: #ebedf0;
+}
+
+.board-cell:hover {
+  outline: 1px solid orange;
 }
 
 .squares {
@@ -57,6 +62,10 @@
   width: 10px;
   float: right;
   margin: 2px 2px;
+}
+
+.radio:hover {
+  outline: 1px solid orange;
 }
 
 #radio1 {
