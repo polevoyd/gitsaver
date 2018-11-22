@@ -8,27 +8,28 @@ const Results = (props) => {
         const previousYear = new Date().getFullYear()-1;
         const inSeconds = new Date().setFullYear(previousYear)
         const start = new Date(inSeconds)
+
         const previousDay = start.getDay();
         const correctDay = start.setDate(start.getDate()-previousDay)
         const toDate = new Date(correctDay)
         const a = toDate.setDate(toDate.getDate() + index);
         const b = new Date(a);
 
-        // console.log(b)
-
-
+        // const c = b.setSeconds(b.getSeconds() + 1);
+        // const d = new Date(c);
+        // console.log(c)
 
         return b;
     }
     
     const scriptsArray = props.board.map((e, i) => {
 
+        
         const date = indexToDate(i).toString();
+        const scripts = new Array(e).fill(date);
         
+        // const scrpt = `git add . && git commit -m 'gitsaver' --date='${date}'`
         
-        const scrpt = `git add . && git commit -m 'gitsaver' --date='${date.toString()}'`
-        
-
         // 0 - 0 contributions
         // 1 - 1 contribution
         // 2 - 13 contributions
@@ -39,7 +40,7 @@ const Results = (props) => {
         // console.log(startingDay())
 
 
-        return scrpt;
+        return scripts;
     })
 
     console.log(scriptsArray)
