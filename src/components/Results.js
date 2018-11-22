@@ -7,4 +7,5 @@ const Results = () => {
         </textarea>
     );
 }
+
 export default Results;
