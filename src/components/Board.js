@@ -3,7 +3,16 @@ import BoardCell from './BoardCell';
 
 const Board = (props) => {
 
-    const arrayOfCells = props.board.map((e,i) => <BoardCell key={i} index={i}></BoardCell>)
+    const arrayOfCells = props.board.map((e,i) => {
+        return(
+            <BoardCell
+                color={props.color}
+                updateBoard={props.updateBoard}
+                key={i}
+                index={i}>
+            </BoardCell>
+        )
+    })
     console.log(props)
     const previousYear = new Date().getFullYear()-1;
     const inSeconds = new Date().setFullYear(previousYear)

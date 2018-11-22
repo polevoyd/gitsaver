@@ -1,8 +1,15 @@
 import React from 'react';
 
 const BoardCell = (props) => {
+    
+    console.log(props)
+
     return(
-        <div className={`board-cell ${props.index}`}></div>
+        <div 
+            style={{backgroundColor: props.color}}
+            className={`board-cell ${props.index}`}
+            onClick={e => props.updateBoard(props.index, props.color)}>
+        </div>
     );
 }
 

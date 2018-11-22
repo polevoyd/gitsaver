@@ -5,7 +5,7 @@ import BoardArea from './BoardArea';
 import Results from './Results';
 
 const App = () => {
-  const currentColor = ''
+  const currentColor = '#ebedf0'
   const currentBoard = new Array(52*7).fill(0);
 
   const [color, setColor] = useState(currentColor)
@@ -20,8 +20,9 @@ const App = () => {
         <Welcome/>
         <BoardArea 
           board={board}
+          color={color}
           setColor={setColor}
-          setCell={setCell}/>
+          updateBoard={updateBoard}/>
         <Results />
       </div>
     );
