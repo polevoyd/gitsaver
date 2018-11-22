@@ -16,8 +16,8 @@ const App = () => {
     
     let copy = board;
     copy[index] = value;
-    console.log(index, value);
-    // setCell(board[index] = value)
+    console.log(copy);
+    setCell(copy);
   }
 
     return(
