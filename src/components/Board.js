@@ -6,10 +6,8 @@ const Board = () => {
     const arrayOfCells = new Array(52*7).fill(0).map((e,i) => <BoardCell key={i} index={i}></BoardCell>)
     
     const year = new Date().getFullYear()-1;
-
-    const start = new Date().setFullYear(year)
-
-    const g = new Date(start)
+    const inSeconds = new Date().setFullYear(year)
+    const start = new Date(inSeconds)
 
 
 
@@ -17,7 +15,7 @@ const Board = () => {
 
 
 
-    console.log(g)
+    console.log(start)
     
     return(
         <div className="board">
