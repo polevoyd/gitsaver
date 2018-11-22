@@ -47,6 +47,7 @@ const Results = (props) => {
         return curr ? acc.concat(curr) : acc;
     }, [])
 
+    // finally, we have an array of dates we need to commit
     console.log(scriptsArray)
 
     return(
