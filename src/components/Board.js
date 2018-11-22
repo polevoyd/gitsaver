@@ -1,10 +1,10 @@
 import React from 'react';
 import BoardCell from './BoardCell';
 
-const Board = () => {
+const Board = (props) => {
 
-    const arrayOfCells = new Array(52*7).fill(0).map((e,i) => <BoardCell key={i} index={i}></BoardCell>)
-    
+    const arrayOfCells = props.board.map((e,i) => <BoardCell key={i} index={i}></BoardCell>)
+    console.log(props)
     const previousYear = new Date().getFullYear()-1;
     const inSeconds = new Date().setFullYear(previousYear)
     const start = new Date(inSeconds)
@@ -16,7 +16,7 @@ const Board = () => {
 
 
 
-    console.log(toDate)
+    // console.log(toDate)
     
     return(
         <div className="board">

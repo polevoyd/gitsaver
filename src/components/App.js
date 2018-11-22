@@ -5,15 +5,23 @@ import BoardArea from './BoardArea';
 import Results from './Results';
 
 const App = () => {
-  const boardColors = ''
+  const currentColor = ''
+  const currentBoard = new Array(52*7).fill(0);
 
-  const [color, setColor] = useState(boardColors)
-    
+  const [color, setColor] = useState(currentColor)
+  const [board, setCell] = useState(currentBoard);
+
+  const updateBoard = (index, value) => {
+    setCell(board[index] = value)
+  }
 
     return(
       <div>
         <Welcome/>
-        <BoardArea setColor={setColor}/>
+        <BoardArea 
+          board={board}
+          setColor={setColor}
+          setCell={setCell}/>
         <Results />
       </div>
     );
