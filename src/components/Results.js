@@ -1,8 +1,10 @@
 import React from 'react';
 
-const Results = () => {
+const Results = (props) => {
+
+    console.log(props)
     return(
-        <textarea className="results">
+        <textarea className="results" defaultValue={props.board}>
 
         </textarea>
     );

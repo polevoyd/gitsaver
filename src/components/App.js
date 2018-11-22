@@ -25,7 +25,8 @@ const App = () => {
           color={color}
           setColor={setColor}
           updateBoard={updateBoard}/>
-        <Results />
+        <Results 
+          board={board}/>
       </div>
     );
 }
