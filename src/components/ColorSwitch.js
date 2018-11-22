@@ -1,9 +1,7 @@
 import React from 'react';
-import { useState } from 'react';
 
 const ColorSwitch = () => {
-    const [color, setColor] = useState('');
-    
+   
     return(
         <div>
             <form className="color-switch">

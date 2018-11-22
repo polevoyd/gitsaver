@@ -2,11 +2,11 @@ import React from 'react';
 import Board from './Board';
 import ColorSwitch from './ColorSwitch';
 
-const BoardArea = () => {
+const BoardArea = (props) => {
     return(
         <div className="board-area">
             <Board/>
-            <ColorSwitch/>
+            <ColorSwitch boardColors={props.boardColors}/>
         </div>
     );
 }
