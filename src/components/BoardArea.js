@@ -6,7 +6,7 @@ const BoardArea = (props) => {
     return(
         <div className="board-area">
             <Board/>
-            <ColorSwitch boardColors={props.boardColors}/>
+            <ColorSwitch setColor={props.setColor}/>
         </div>
     );
 }

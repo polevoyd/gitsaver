@@ -13,7 +13,7 @@ const App = () => {
     return(
       <div>
         <Welcome/>
-        <BoardArea boardColors={boardColors}/>
+        <BoardArea setColor={setColor}/>
         <Results />
       </div>
     );
