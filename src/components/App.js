@@ -3,8 +3,7 @@ import Welcome from './Welcome';
 import Board from './BoardArea';
 import Results from './Results';
 
-class App extends React.Component {
-  render(){
+const App = () => {
     return(
       <div>
         <Welcome/>
@@ -12,7 +11,6 @@ class App extends React.Component {
         <Results />
       </div>
     );
-  }
 }
 
 export default App;
