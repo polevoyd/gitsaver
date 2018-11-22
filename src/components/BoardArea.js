@@ -6,7 +6,7 @@ const BoardArea = () => {
     return(
         <div className="board-area">
             <Board/>
-            <ColorSwitch />
+            <ColorSwitch/>
         </div>
     );
 }
