@@ -12,7 +12,10 @@ const App = () => {
   const [board, setCell] = useState(currentBoard);
 
   const updateBoard = (index, value) => {
-    setCell(board[index] = value)
+
+    console.log(index, value);
+
+    // setCell(board[index] = value)
   }
 
     return(
