@@ -9,13 +9,14 @@ const Board = () => {
     const inSeconds = new Date().setFullYear(year)
     const start = new Date(inSeconds)
 
+    const day = start.getDay();
+    const correctDay = start.setDate(start.getDate()-day)
+    const toDate = new Date(correctDay)
 
 
 
 
-
-
-    console.log(start)
+    console.log(toDate)
     
     return(
         <div className="board">
