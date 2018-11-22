@@ -12,11 +12,14 @@ const Results = (props) => {
         const correctDay = start.setDate(start.getDate()-previousDay)
         const toDate = new Date(correctDay)
 
+        
+        const a = toDate.setDate(toDate.getDate() + index);
+        const b = new Date(a);
 
-        console.log(toDate)
+        console.log(b)
 
 
-        return toDate;
+        return b;
     }
     
     // const scriptCalendar = props.board.map((e, i) => {
@@ -33,6 +36,11 @@ const Results = (props) => {
     //     return e;
     // })
 
+    indexToDate(0);
+    indexToDate(1);
+    indexToDate(20);
+    indexToDate(40);
+    indexToDate(300);
 
     // console.log(scriptCalendar)
 
