@@ -1,12 +1,10 @@
 import React from 'react';
 import { useState } from 'react';
 import Welcome from './Welcome';
-import Board from './BoardArea';
-import Results from './Results';
 import BoardArea from './BoardArea';
+import Results from './Results';
 
 const App = () => {
-  
   const [color, setColor] = useState('');
 
     return(
