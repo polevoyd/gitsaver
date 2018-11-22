@@ -3,7 +3,7 @@ import BoardCell from './BoardCell';
 
 const Board = () => {
 
-    const arrayOfCells = new Array(54*7).fill(0).map(e => <BoardCell></BoardCell>)
+    const arrayOfCells = new Array(54*7).fill(0).map((e,i) => <BoardCell key={i}></BoardCell>)
     return(
         <div className="board">
             <ul className="squares">
