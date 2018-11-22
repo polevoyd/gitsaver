@@ -6,6 +6,7 @@ const Board = (props) => {
     const arrayOfCells = props.board.map((e,i) => {
         return(
             <BoardCell
+                board={props.board}
                 color={props.color}
                 updateBoard={props.updateBoard}
                 key={i}
@@ -13,7 +14,8 @@ const Board = (props) => {
             </BoardCell>
         )
     })
-    console.log(props)
+    // console.log(props)
+
     const previousYear = new Date().getFullYear()-1;
     const inSeconds = new Date().setFullYear(previousYear)
     const start = new Date(inSeconds)
