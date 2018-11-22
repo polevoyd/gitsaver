@@ -1,8 +1,8 @@
 import React from 'react';
 
-const BoardCell = () => {
+const BoardCell = (props) => {
     return(
-        <div className='board-cell'></div>
+        <div className={`board-cell ${props.index}`}></div>
     );
 }
 
