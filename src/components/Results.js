@@ -2,8 +2,6 @@ import React from 'react';
 
 const Results = (props) => {
 
-    // props.board - array with 364 items with colors 1-4
-
     const indexToDate = (index) => {
         const previousYear = new Date().getFullYear()-1;
         const inSeconds = new Date().setFullYear(previousYear)
