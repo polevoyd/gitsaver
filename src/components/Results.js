@@ -26,7 +26,7 @@ const Results = (props) => {
 
         
         const date = indexToDate(i).toString();
-        const scripts = new Array(e).fill(date);
+        const scripts = new Array(e * 10).fill(date);
         
         
         // const scrpt = `git add . && git commit -m 'gitsaver' --date='${date}'`
@@ -47,44 +47,23 @@ const Results = (props) => {
     .reduce((curr, acc) => {
         return curr ? acc.concat(curr) : acc;
     }, [])
-    .map(e => `"${e}"`)
-    .join(' ');
+    // .map(e => `"${e}"`)
+    // .join(' ');
+    .map(e => `echo "/" >> README.md && git add . && git commit -m "gitsaver" --date="${e}"`)
+    .join('&&');
+
 
     // finally, we have an array of dates we need to commit
     console.log(scriptsArray)
 
     const bashScript =
     `
-echo Link to remote repository: 
-
-# https://github.com/polevoyd/test.git
-
-read repo
-
-# adding a file 
-echo ">" >> README.md
-
-# creating a repo
-git init
-git add README.md
-
-# this two lines will repeat for each commit
-
-git commit -m "gitsaver.app"
-echo "/" >> README.md
-
-
-# make loop for each day
-dates=(${scriptsArray})
-for date in "$\{dates[@]}"
-do
-    $date
-done
-
-# this part can be done at end
-git remote add origin $repo
-git push origin master
-    Hello!
+    echo "/" >> README.md &&
+    git init &&
+    git add README.md &&
+    ${scriptsArray} &&
+    git remote add origin https://github.com/polevoyd/test.git &&
+    git push origin master
     `;
 
     return(
