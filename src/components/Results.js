@@ -2,17 +2,14 @@ import React from 'react';
 
 const Results = (props) => {
 
-    const saveTextAsFile = () => {
-        const textToWrite = bashScript;
-        const textFileAsBlob = new Blob([textToWrite], {type:'text/plain'});
-        const fileNameToSaveAs = 'gitsaver';
+    const downloadScript = () => {
+        const blob = new Blob([bashScript], {type:'text/plain'});
         const downloadLink = document.createElement("a");
-        downloadLink.download = fileNameToSaveAs;
-        downloadLink.innerHTML = "Download File";
+        downloadLink.download = 'gitsaver';
         if (window.webkitURL != null) {
-            downloadLink.href = window.webkitURL.createObjectURL(textFileAsBlob);
+            downloadLink.href = window.webkitURL.createObjectURL(blob);
         } else {
-            downloadLink.href = window.URL.createObjectURL(textFileAsBlob);
+            downloadLink.href = window.URL.createObjectURL(blob);
             downloadLink.style.display = "none";
             document.body.appendChild(downloadLink);
         }
@@ -20,20 +17,20 @@ const Results = (props) => {
     }
 
     const indexToDate = (index) => {
+        // TODO: refactor
         const previousYear = new Date().getFullYear()-1;
-        const inSeconds = new Date().setFullYear(previousYear)
-        const start = new Date(inSeconds)
-
-        const previousDay = start.getDay();
-        const correctDay = start.setDate(start.getDate()-previousDay)
-        const toDate = new Date(correctDay)
-        const a = toDate.setDate(toDate.getDate() + index);
-        const b = new Date(a);
-
-        return b;
+        const previousYearInSeconds = new Date().setFullYear(previousYear)
+        const correctDate = new Date(previousYearInSeconds)
+        const previousDay = correctDate.getDay();
+        const correctDayInSeconds = correctDate.setDate(correctDate.getDate()-previousDay)
+        const correctDay = new Date(correctDayInSeconds)
+        const finalDateInSeconds = correctDay.setDate(correctDay.getDate() + index);
+        const finalDate = new Date(finalDateInSeconds);
+        return finalDate;
     }
     
-    const scriptsArray = props.board.map((e, i) => {
+    const scriptsArray = props.board
+    .map((e, i) => {
         const date = indexToDate(i).toString();
         const scripts = new Array(e * 12).fill(date);
         return scripts;
@@ -50,7 +47,7 @@ mkdir gitsaver_temp&&cd gitsaver_temp&&echo Paste link to repo:&&read link&&echo
 
     return(
         <div>
-            <button onClick={saveTextAsFile}>Download Script</button>
+            <button onClick={downloadScript}>Download Script</button>
             <textarea className="results" readOnly value={bashScript}>
             </textarea>
         </div>

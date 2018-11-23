@@ -4,14 +4,10 @@ const Welcome = () => {
     return(
         <div className="welcome">
             <h4>
-                Namename
+                Gitsaver 1.0
             </h4>
             <p>
-                text text text text text text text text text text text text text 
-                text text text text text text text text text text text text text
-                text text text text text text text text text text text text text
-                text text text text text text text text text text text text text
-                text text text text text text text text text text text text text
+                A screensaver for your github calendar.
             </p>
         </div>
     );
