@@ -1,5 +1,5 @@
 * {
-  /* outline: 1px solid lightcoral; */
+  outline: 1px solid lightcoral;
 }
 
 body {
@@ -122,7 +122,7 @@ body {
 
 .results {
   width: 50vw;
-  height: 20vh;
+  height: 10vh;
   display: block;
   margin: 0 auto;
   border-radius: 10px;
@@ -136,7 +136,8 @@ body {
 
 .instructions {
   display: block;
-  margin: 10vw auto;
+  margin: 0vh auto;
+  
   width: 80vw;
   font-family: 'Noto Sans', sans-serif;
   font-size: 1rem;
@@ -149,7 +150,22 @@ body {
   text-shadow: 1px 2px 1.5px rgba(0,0,0,0.3);
 }
 
+.instructions li {
+  margin: 1vh auto;
+}
 
+.instructions span {
+  background-color: #24292e;
+  color: orange;
+  padding: 0 5px;
+  border-radius: 5px;
+}
+
+.instructions a {
+  text-align: center;
+  display: block;
+  margin-top: 5vh;
+}
 
 
 /* 
