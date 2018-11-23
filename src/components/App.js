@@ -7,7 +7,7 @@ import Instructions from './Instructions';
 import FAQ from './FAQ';
 
 const App = () => {
-  const currentColor = '#ebedf0'
+  const currentColor = '#c6e48b'
   const currentBoard = new Array(52*7).fill(0);
 
   const [color, setColor] = useState(currentColor)
