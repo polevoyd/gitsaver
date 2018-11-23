@@ -43,15 +43,49 @@ const Results = (props) => {
         
 
         return scripts;
-    }).reduce((curr, acc) => {
+    })
+    .reduce((curr, acc) => {
         return curr ? acc.concat(curr) : acc;
     }, [])
+    .map(e => `"${e}"`)
+    .join(' ');
 
     // finally, we have an array of dates we need to commit
     console.log(scriptsArray)
 
+    const bashScript =
+    `
+echo Link to remote repository: 
+
+# https://github.com/polevoyd/test.git
+
+read repo
+
+# adding a file 
+echo ">" >> README.md
+
+# creating a repo
+git init
+git add README.md
+
+# this two lines will repeat for each commit
+
+git commit -m "gitsaver.app"
+echo "/" >> README.md
+
+
+# make loop for each day
+array=()
+
+
+# this part can be done at end
+git remote add origin $repo
+git push origin master
+    Hello!
+    `;
+
     return(
-        <textarea className="results" defaultValue={props.board}>
+        <textarea className="results" defaultValue={bashScript}>
 
         </textarea>
     );
