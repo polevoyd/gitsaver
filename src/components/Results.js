@@ -47,7 +47,7 @@ mkdir gitsaver_temp&&cd gitsaver_temp&&echo Paste link to repo:&&read link&&echo
 
     return(
         <div>
-            <button onClick={downloadScript}>Download Script</button>
+            <button className="button-download" onClick={downloadScript}>Download Script</button>
             <textarea className="results" readOnly value={bashScript}>
             </textarea>
         </div>

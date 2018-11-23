@@ -3,9 +3,7 @@ import React from 'react';
 const Welcome = () => {
     return(
         <div className="welcome">
-            <h4>
-                Gitsaver 1.0
-            </h4>
+            <h4 className="changing-colors">gitsaver</h4> 
             <p>
                 A screensaver for your github calendar.
             </p>
