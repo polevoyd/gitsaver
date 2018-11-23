@@ -75,8 +75,11 @@ echo "/" >> README.md
 
 
 # make loop for each day
-array=()
-
+dates=(${scriptsArray})
+for date in "$\{dates[@]}"
+do
+    $date
+done
 
 # this part can be done at end
 git remote add origin $repo
@@ -85,7 +88,7 @@ git push origin master
     `;
 
     return(
-        <textarea className="results" defaultValue={bashScript}>
+        <textarea className="results" readOnly value={bashScript}>
 
         </textarea>
     );
