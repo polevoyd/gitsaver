@@ -26,7 +26,7 @@ const Results = (props) => {
 
         
         const date = indexToDate(i).toString();
-        const scripts = new Array(e * 10).fill(date);
+        const scripts = new Array(e * 12).fill(date);
         
         
         // const scrpt = `git add . && git commit -m 'gitsaver' --date='${date}'`
