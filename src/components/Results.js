@@ -68,7 +68,6 @@ const Results = (props) => {
 
     return(
         <textarea className="results" readOnly value={bashScript}>
-
         </textarea>
     );
 }
