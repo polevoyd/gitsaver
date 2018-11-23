@@ -55,11 +55,14 @@ const Results = (props) => {
  
     const bashScript =
     `
+    #!/bin/bash
+    echo Paste link to repo: &&
+    read link &&
     echo "|" >> README.md &&
     git init &&
     git add README.md &&
     ${scriptsArray} &&
-    git remote add origin https://github.com/polevoyd/test.git &&
+    git remote add origin $link &&
     git push origin master
     `;
 
