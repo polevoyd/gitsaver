@@ -3,30 +3,19 @@ import React from 'react';
 const Results = (props) => {
 
     const saveTextAsFile = () => {
-
         const textToWrite = bashScript;
         const textFileAsBlob = new Blob([textToWrite], {type:'text/plain'});
         const fileNameToSaveAs = 'gitsaver';
-
         const downloadLink = document.createElement("a");
         downloadLink.download = fileNameToSaveAs;
         downloadLink.innerHTML = "Download File";
-        if (window.webkitURL != null)
-        {
-            // Chrome allows the link to be clicked
-            // without actually adding it to the DOM.
+        if (window.webkitURL != null) {
             downloadLink.href = window.webkitURL.createObjectURL(textFileAsBlob);
-        }
-        else
-        {
-            // Firefox requires the link to be added to the DOM
-            // before it can be clicked.
+        } else {
             downloadLink.href = window.URL.createObjectURL(textFileAsBlob);
-            // downloadLink.onclick = destroyClickedElement;
             downloadLink.style.display = "none";
             document.body.appendChild(downloadLink);
         }
-
         downloadLink.click();
     }
 
@@ -65,7 +54,6 @@ mkdir gitsaver_temp&&cd gitsaver_temp&&echo Paste link to repo:&&read link&&echo
             <textarea className="results" readOnly value={bashScript}>
             </textarea>
         </div>
-        
     );
 }
 
