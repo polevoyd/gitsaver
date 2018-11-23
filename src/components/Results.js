@@ -52,12 +52,12 @@ const Results = (props) => {
     .reduce((curr, acc) => {
         return curr ? acc.concat(curr) : acc;
     }, [])
-    .map(e => `echo "|" >> README.md && git add . && git commit -m "gitsaver" --date="${e}"`)
+    .map(e => `echo "|" >> README.md&&git add .&&git commit -m "gitsaver" --date="${e}"`)
     .join('&&');
 
     const bashScript =
     `#!/bin/bash
-echo Paste link to repo:&&read link&&echo "|" >> README.md&&git init&&git add README.md&&${scriptsArray}&&git remote add origin $link&&git push origin master`;
+mkdir gitsaver_temp&&cd gitsaver_temp&&echo Paste link to repo:&&read link&&echo "|" >> README.md&&git init&&git add README.md&&${scriptsArray}&&git remote add origin $link&&git push origin master&&cd ..&&rm -r gitsaver_temp`;
 
     return(
         <div>
