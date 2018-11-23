@@ -1,5 +1,5 @@
 * {
-  outline: 1px solid lightcoral;
+  /* outline: 1px solid lightcoral; */
 }
  /* Welcome  */
 .welcome {
@@ -11,7 +11,7 @@
 .welcome h4 {
   text-align: center;
   font-family: 'Lato', sans-serif;
-  font-size: 10vh;  
+  font-size: 10vw;  
   margin: 0 0;
   letter-spacing: 5px;
   text-shadow: 4px 3px 0px #fff, 9px 8px 0px rgba(0,0,0,0.15);
@@ -22,6 +22,7 @@
   margin-top: 2.5vh;
   font-family: 'Noto Sans', sans-serif;
   color: grey;
+  font-size: 2vw;
 }
 
 .changing-colors {
@@ -103,7 +104,7 @@
 
 .button-download {
   display: block;
-  margin: 0 auto;
+  margin: 2.5vh auto;
 }
 
 .results {
@@ -111,7 +112,11 @@
   height: 20vh;
   display: block;
   margin: 0 auto;
+  border-radius: 10px;
+  padding: 0 10px 0 10px;
   resize: none;
+  background-color: #24292e;
+  color: rgb(255, 184, 51);
 }
 
 /* 
