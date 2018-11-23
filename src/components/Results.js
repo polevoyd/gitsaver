@@ -2,6 +2,34 @@ import React from 'react';
 
 const Results = (props) => {
 
+    const saveTextAsFile = () => {
+
+        const textToWrite = bashScript;
+        const textFileAsBlob = new Blob([textToWrite], {type:'text/plain'});
+        const fileNameToSaveAs = 'gitsaver';
+
+        const downloadLink = document.createElement("a");
+        downloadLink.download = fileNameToSaveAs;
+        downloadLink.innerHTML = "Download File";
+        if (window.webkitURL != null)
+        {
+            // Chrome allows the link to be clicked
+            // without actually adding it to the DOM.
+            downloadLink.href = window.webkitURL.createObjectURL(textFileAsBlob);
+        }
+        else
+        {
+            // Firefox requires the link to be added to the DOM
+            // before it can be clicked.
+            downloadLink.href = window.URL.createObjectURL(textFileAsBlob);
+            // downloadLink.onclick = destroyClickedElement;
+            downloadLink.style.display = "none";
+            document.body.appendChild(downloadLink);
+        }
+
+        downloadLink.click();
+    }
+
     const indexToDate = (index) => {
         const previousYear = new Date().getFullYear()-1;
         const inSeconds = new Date().setFullYear(previousYear)
@@ -28,21 +56,16 @@ const Results = (props) => {
     .join('&&');
 
     const bashScript =
-    `
-    #!/bin/bash
-    echo Paste link to repo: &&
-    read link &&
-    echo "|" >> README.md &&
-    git init &&
-    git add README.md &&
-    ${scriptsArray} &&
-    git remote add origin $link &&
-    git push origin master
-    `;
+    `#!/bin/bash
+echo Paste link to repo:&&read link&&echo "|" >> README.md&&git init&&git add README.md&&${scriptsArray}&&git remote add origin $link&&git push origin master`;
 
     return(
-        <textarea className="results" readOnly value={bashScript}>
-        </textarea>
+        <div>
+            <button onClick={saveTextAsFile}>Download Script</button>
+            <textarea className="results" readOnly value={bashScript}>
+            </textarea>
+        </div>
+        
     );
 }
 
