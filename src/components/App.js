@@ -3,6 +3,7 @@ import { useState } from 'react';
 import Welcome from './Welcome';
 import BoardArea from './BoardArea';
 import Results from './Results';
+import Instructions from './Instructions';
 import FAQ from './FAQ';
 
 const App = () => {
@@ -28,7 +29,8 @@ const App = () => {
         updateBoard={updateBoard}/>
       <Results 
         board={board}/>
-        <FAQ/>
+        <Instructions/>
+        <FAQ />
     </div>
   );
 }
