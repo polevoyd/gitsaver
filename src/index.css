@@ -45,7 +45,13 @@ body {
 /* board  */
 
 .board-area {
-  margin: 10vw auto;
+  margin: 0vw auto;
+  margin-top: 5vh;
+  background-color: white;
+  border-radius: 10px;
+  padding-top: 10px;
+  padding-bottom: 30px;
+  box-shadow: 0px 5px 15px -5px rgba(0,0,0,0.75);
 }
 
 .board {
