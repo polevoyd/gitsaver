@@ -47,15 +47,12 @@ const Results = (props) => {
     .reduce((curr, acc) => {
         return curr ? acc.concat(curr) : acc;
     }, [])
-    // .map(e => `"${e}"`)
-    // .join(' ');
     .map(e => `echo "/" >> README.md && git add . && git commit -m "gitsaver" --date="${e}"`)
     .join('&&');
 
 
     // finally, we have an array of dates we need to commit
-    console.log(scriptsArray)
-
+ 
     const bashScript =
     `
     echo "/" >> README.md &&
