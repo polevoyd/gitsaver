@@ -3,6 +3,7 @@ import { useState } from 'react';
 import Welcome from './Welcome';
 import BoardArea from './BoardArea';
 import Results from './Results';
+import FAQ from './FAQ';
 
 const App = () => {
   const currentColor = '#ebedf0'
@@ -16,7 +17,7 @@ const App = () => {
     copy[index] = value;
     setBoard(copy);
   }
-  
+
   return(
     <div>
       <Welcome/>
@@ -27,6 +28,7 @@ const App = () => {
         updateBoard={updateBoard}/>
       <Results 
         board={board}/>
+        <FAQ/>
     </div>
   );
 }
