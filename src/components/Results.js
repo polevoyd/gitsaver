@@ -47,7 +47,7 @@ const Results = (props) => {
     .reduce((curr, acc) => {
         return curr ? acc.concat(curr) : acc;
     }, [])
-    .map(e => `echo "/" >> README.md && git add . && git commit -m "gitsaver" --date="${e}"`)
+    .map(e => `echo "|" >> README.md && git add . && git commit -m "gitsaver" --date="${e}"`)
     .join('&&');
 
 
@@ -55,7 +55,7 @@ const Results = (props) => {
  
     const bashScript =
     `
-    echo "/" >> README.md &&
+    echo "|" >> README.md &&
     git init &&
     git add README.md &&
     ${scriptsArray} &&
