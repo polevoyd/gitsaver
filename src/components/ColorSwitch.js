@@ -16,14 +16,3 @@ const ColorSwitch = (props) => {
 }
 
 export default ColorSwitch;
-
-/*
-onClick={e => setColor('#196127')}
-onClick={e => setColor('#239a3b')}
-onClick={e => setColor('#7bc96f')}
-onClick={e => setColor('#c6e48b')}
-onClick={e => setColor('#ebedf0')}
- */
-
-
- 

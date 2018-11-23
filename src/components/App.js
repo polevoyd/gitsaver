@@ -16,19 +16,19 @@ const App = () => {
     copy[index] = value;
     setBoard(copy);
   }
-
-    return(
-      <div>
-        <Welcome/>
-        <BoardArea 
-          board={board}
-          color={color}
-          setColor={setColor}
-          updateBoard={updateBoard}/>
-        <Results 
-          board={board}/>
-      </div>
-    );
+  
+  return(
+    <div>
+      <Welcome/>
+      <BoardArea 
+        board={board}
+        color={color}
+        setColor={setColor}
+        updateBoard={updateBoard}/>
+      <Results 
+        board={board}/>
+    </div>
+  );
 }
 
 export default App;

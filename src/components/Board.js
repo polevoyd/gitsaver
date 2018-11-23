@@ -14,7 +14,6 @@ const Board = (props) => {
             </BoardCell>
         )
     })
-    // console.log(props)
     
     return(
         <div className="board">

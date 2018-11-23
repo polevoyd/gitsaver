@@ -35,7 +35,6 @@ const BoardCell = (props) => {
                 break;
         }    
     }
-    // console.log(props)
 
     return(
         <div 
