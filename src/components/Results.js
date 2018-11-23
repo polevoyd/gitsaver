@@ -15,33 +15,12 @@ const Results = (props) => {
         const a = toDate.setDate(toDate.getDate() + index);
         const b = new Date(a);
 
-        // const c = b.setSeconds(b.getSeconds() + 1);
-        // const d = new Date(c);
-        // console.log(c)
-
         return b;
     }
     
     const scriptsArray = props.board.map((e, i) => {
-
-        
         const date = indexToDate(i).toString();
         const scripts = new Array(e * 12).fill(date);
-        
-        
-        // const scrpt = `git add . && git commit -m 'gitsaver' --date='${date}'`
-        
-        // 0 - 0 contributions
-        // 1 - 1 contribution
-        // 2 - 13 contributions
-        // 3 - 26 contributions
-        // 4 - 39 contributions
-
-        
-        // console.log(startingDay())
-
-        
-
         return scripts;
     })
     .reduce((curr, acc) => {
@@ -50,9 +29,6 @@ const Results = (props) => {
     .map(e => `echo "|" >> README.md && git add . && git commit -m "gitsaver" --date="${e}"`)
     .join('&&');
 
-
-    // finally, we have an array of dates we need to commit
- 
     const bashScript =
     `
     #!/bin/bash
