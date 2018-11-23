@@ -3,7 +3,7 @@ import React from 'react';
 const ColorSwitch = (props) => {
    
     return(
-        <div>
+        <div className="color-switch-area">
             <form className="color-switch">
                 <div className="color" id="color1" onClick={e => props.setColor('#196127')}></div>
                 <div className="color" id="color2" onClick={e => props.setColor('#239a3b')}></div>

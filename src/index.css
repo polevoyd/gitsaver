@@ -1,5 +1,11 @@
 * {
-  outline: 1px solid lightcoral;
+  /* outline: 1px solid lightcoral; */
+}
+
+body {
+  height: 100vh;
+  background-color: #ebedf0;
+  background-image: linear-gradient(180deg, #ebedf0 0%, #c6e48b 50%, #7bc96f 100%);
 }
  /* Welcome  */
 .welcome {
@@ -66,7 +72,6 @@
 .color-switch {
   display: block;
   margin: 0 auto;
-  color: #24292e;
   width: 70px;
 }
 
@@ -75,6 +80,7 @@
   width: 10px;
   float: right;
   margin: 2px 2px;
+  
 }
 
 .color:hover {
@@ -124,14 +130,14 @@
 
 .instructions {
   display: block;
-  margin: 0 auto;
+  margin: 10vw auto;
   width: 80vw;
+  font-family: 'Noto Sans', sans-serif;
+  font-size: 2vw;
 }
 
 .instructions {
-  display: block;
-  margin: 0 auto;
-  width: 80vw;
+  
 }
 
 
