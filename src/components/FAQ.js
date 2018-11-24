@@ -3,7 +3,6 @@ import React from 'react';
 const FAQ = () => {
     return(
         <div className="faq-window">
-        <div className="button-close"></div>
             <ul>
                 <li>
                     <h4>What is that?</h4>
@@ -16,12 +15,6 @@ const FAQ = () => {
                 <li>
                     <h4>Tips</h4>
                     <p>Follow instructions on a main page and make sure you have rights to execute commands. To make it easier, just create a new repository for your gitsaver. Then, when you can just delete that repository to clean up board.</p>
-                </li>
-                <li>
-                    <h4>I am confused. I am a recruiter and I can't judge engineers by this little squares anymore. How do I know who to hire then?</h4>
-                    <p>Evaluating someone's ability of cooking by how much time they spend at the kitchen doesn't seems a good idea... By the way, coincedantelly, I looking for a good job now. So you can hire me.</p>
-                    
-
                 </li>
             </ul>
         </div>
