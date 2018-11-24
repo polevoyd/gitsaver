@@ -27,7 +27,7 @@ const App = () => {
 
   return(
     <div>
-      <Welcome switchFaq={switchFaq}/>
+      <Welcome switchFaq={switchFaq} faqIsOn={faq}/>
       <BoardArea 
         board={board}
         color={color}
