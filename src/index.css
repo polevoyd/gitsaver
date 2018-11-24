@@ -224,6 +224,17 @@ body button:active {
   box-shadow: 0px 5px 15px -5px rgba(0,0,0,0.75);
 }
 
+.faq-window ul {
+  list-style-type: none;
+
+  
+}
+
+.button-close {
+  height: 5vh;
+  width: 5vh;
+  background-color: #005d13;
+}
 
 
 /* 
