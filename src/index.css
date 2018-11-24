@@ -1,5 +1,5 @@
 * {
-  /* outline: 1px solid lightcoral; */
+  outline: 1px solid lightcoral;
 }
 
 body {
@@ -145,7 +145,7 @@ body {
 .instructions {
   display: block;
   margin: 0vh auto;
-  width: 60vw;
+  width: 50vw;
   font-family: 'Noto Sans', sans-serif;
   font-size: 1rem;
 }
