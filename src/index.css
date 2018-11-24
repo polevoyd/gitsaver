@@ -1,5 +1,5 @@
 * {
-  outline: 1px solid lightcoral;
+  /* outline: 1px solid lightcoral; */
 }
 
 body {
@@ -207,6 +207,11 @@ body button:active {
 }
 
 /* faq  */
+
+.button-faq {
+  display: block;
+  margin: 0 auto;
+}
 
 .faq-window {
   width: 90vw;

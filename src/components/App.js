@@ -26,8 +26,8 @@ const App = () => {
   }
 
   return(
-    <div onClick={switchFaq}>
-      <Welcome/>
+    <div>
+      <Welcome switchFaq={switchFaq}/>
       <BoardArea 
         board={board}
         color={color}
