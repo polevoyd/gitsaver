@@ -1,5 +1,5 @@
 * {
-  /* outline: 1px solid lightcoral; */
+  outline: 1px solid lightcoral;
 }
 
 body {
@@ -222,18 +222,36 @@ body button:active {
   left: 5%;
   border-radius: 10px;
   box-shadow: 0px 5px 15px -5px rgba(0,0,0,0.75);
+  background-color: #ebedf0;
+
 }
 
 .faq-window ul {
   list-style-type: none;
+  display: block;
+  width: 80vw;
+}
 
+
+.faq-window h4 {
+  color: #196127;
+  text-align: center;
+  font-size: 1.5rem;
+  text-shadow: 1px 2px 1.5px rgba(0,0,0,0.3);
   
 }
 
+.faq-window p {
+  font-family: 'Noto Sans', sans-serif;
+  font-size: 1rem;
+}
 .button-close {
-  height: 5vh;
-  width: 5vh;
+  height: 4vh;
+  width: 4vh;
   background-color: #005d13;
+  border-radius: 50%;
+  margin: 1vh 1vh;
+  float: right;
 }
 
 
