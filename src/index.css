@@ -215,10 +215,10 @@ body button:active {
 
 .faq-window {
   width: 90vw;
-  height: 75vh;
+  height: 70vh;
   background-color: #ebedf0;
   position: absolute;
-  top: 20%;
+  top: 25%;
   left: 5%;
   border-radius: 10px;
 }
