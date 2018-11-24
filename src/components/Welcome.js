@@ -2,8 +2,6 @@ import React from 'react';
 
 const Welcome = (props) => {
     const buttonColor = (props) => {
-
-
         return props.faqIsOn ? {backgroundColor: '#d10000'} : {backgroundColor: '#89c403'};
     }
 
