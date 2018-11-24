@@ -11,7 +11,12 @@ const Welcome = (props) => {
             <p>
                 A screensaver for your github calendar.
             </p>
-            <button onClick={props.switchFaq} className="button-faq" style={buttonColor(props)}>FAQ</button>
+            <button 
+                onClick={props.switchFaq} className="button-faq" 
+                style={buttonColor(props)}
+            >
+            FAQ
+            </button>
         </div>
     );
 }
