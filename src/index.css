@@ -1,5 +1,5 @@
 * {
-  outline: 1px solid lightcoral;
+  /* outline: 1px solid lightcoral; */
 }
 
 body {
@@ -90,7 +90,6 @@ body {
   width: 10px;
   float: right;
   margin: 2px 2px;
-  
 }
 
 .color:hover {
@@ -183,6 +182,32 @@ body {
 .instructions a:hover {
   color: orange;
 }
+
+body button {
+	background-color:#89c403;
+	border-radius:5px;
+	border:1px solid #74b807;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-weight:bold;
+	padding:5px 20px;
+	text-decoration:none;
+  text-shadow:0px 1px 0px #005d13;
+  transition: 0.3s;
+}
+
+body button:hover {
+	background-color:#77a809;
+}
+
+body button:active {
+	position:relative;
+	top:1px;
+}
+
+        
+
 
 
 /* 
