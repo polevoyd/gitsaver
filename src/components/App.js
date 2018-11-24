@@ -9,9 +9,11 @@ import FAQ from './FAQ';
 const App = () => {
   const currentColor = '#c6e48b'
   const currentBoard = new Array(52*7).fill(0);
+  const faqIsOpened = false;
 
   const [color, setColor] = useState(currentColor)
   const [board, setBoard] = useState(currentBoard);
+  const [faq, setFaq] = useState(faqIsOpened);
 
   const updateBoard = (index, value) => {
     let copy = board;
@@ -19,8 +21,12 @@ const App = () => {
     setBoard(copy);
   }
 
+  const switchFaq = () => {
+    setFaq(!faq);
+  }
+
   return(
-    <div>
+    <div onClick={switchFaq}>
       <Welcome/>
       <BoardArea 
         board={board}
@@ -30,7 +36,7 @@ const App = () => {
       <Results 
         board={board}/>
         <Instructions/>
-        <FAQ />
+        {faq ? <FAQ /> : null}
     </div>
   );
 }
