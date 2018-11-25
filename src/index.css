@@ -233,8 +233,6 @@ body button:active {
   100% { transform: translateX(0); opacity: 1; }
 }
 
-
-
 .faq-window ul {
   list-style-type: none;
   display: block;
