@@ -5,7 +5,6 @@ App provides an interface to draw on a GitHub calendar and automatically generat
 
 /* Templates coming soon */
 
-Example (this one is actual): 
-
+Examples (just one so far): 
 
 ![Example](https://i.ibb.co/hyTvdy7/Webp-net-resizeimage-11.jpg)
