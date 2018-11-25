@@ -148,7 +148,7 @@ body {
 .instructions {
   display: block;
   margin: 0vh auto;
-  width: 50vw;
+  width: 40vh;
   font-family: 'Noto Sans', sans-serif;
   font-size: 1rem;
 }
@@ -176,10 +176,11 @@ body {
 .instructions a {
   text-align: center;
   display: block;
-  margin-top: 4vh;
+  position: fixed;
   text-decoration: none;
   color: #196127;
   font-size: 0.8rem;
+  left: 45%;
 }
 
 .instructions a:hover {
