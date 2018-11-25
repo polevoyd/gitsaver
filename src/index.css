@@ -97,6 +97,7 @@ body {
 
 .color:hover {
   outline: 1px solid orange;
+  cursor: pointer;
 }
 
 #color1 {
@@ -154,6 +155,7 @@ body {
 }
 
 .instructions h5 {
+  margin: 2vh 0 0 0;
   color: #196127;
   text-align: center;
   font-size: 1.5rem;
@@ -173,14 +175,13 @@ body {
   white-space: nowrap;
 }
 
-.instructions a {
-  text-align: center;
-  display: block;
-  position: fixed;
+.made-by-polevoy {
+  position: absolute;
   text-decoration: none;
-  color: #196127;
+  color: grey;
   font-size: 0.8rem;
-  left: 45%;
+  top:1vh;
+  right: 1vw;
 }
 
 .instructions a:hover {
@@ -245,5 +246,5 @@ body button:active {
   font-family: 'Noto Sans', sans-serif;
   font-size: 1rem;
   letter-spacing: 0.4px;
-  color: grey;
+  color: #165322;
 }
