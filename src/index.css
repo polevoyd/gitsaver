@@ -76,7 +76,10 @@ body {
   grid-template-rows: repeat(7, 10px);
   grid-auto-flow: column;
   grid-auto-columns: 10px;
-  /* grid-area: squares; */
+}
+
+.squares:hover{
+  cursor: pointer;
 }
 
 .color-switch {
@@ -207,7 +210,6 @@ body button:active {
 }
 
 /* faq  */
-
 .button-faq {
   display: block;
   margin: 0 auto;
@@ -216,13 +218,12 @@ body button:active {
 .faq-window {
   width: 80vw;
   height: 70vh;
-  background-color: #ebedf0;
+  background-color: #d1e0b2;
   position: absolute;
   top: 25%;
   left: 10%;
   border-radius: 10px;
   box-shadow: 0px 5px 15px -5px rgba(0,0,0,0.75);
-  background-color: #ebedf0;
 }
 
 .faq-window ul {
@@ -243,4 +244,5 @@ body button:active {
   font-family: 'Noto Sans', sans-serif;
   font-size: 1rem;
   letter-spacing: 0.4px;
+  color: grey;
 }

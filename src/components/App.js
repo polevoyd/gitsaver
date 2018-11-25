@@ -26,7 +26,7 @@ const App = () => {
   }
 
   return(
-    <div>
+    <div onClick={faq ? switchFaq : null}>
       <Welcome switchFaq={switchFaq} faqIsOn={faq}/>
       <BoardArea 
         board={board}
