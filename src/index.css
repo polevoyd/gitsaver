@@ -5,9 +5,8 @@
 body {
   height: 100vh;
   min-width: 720px;
-  overflow: hidden;
-  background-color: #ebedf0;
-  background-image: linear-gradient(180deg, #ebedf0 0%, #c6e48b 50%, #7bc96f 100%);
+  overflow-x: hidden;
+  background-color: #A9FDAC;
 }
  /* Welcome  */
 .welcome {
