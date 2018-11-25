@@ -1,2 +1,2 @@
 # gitsaver
-In process...
+Commit to the Art. A screensaver for a GitHub calendar.
