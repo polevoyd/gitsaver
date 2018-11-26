@@ -15,10 +15,16 @@ const App = () => {
   const [board, setBoard] = useState(currentBoard);
   const [faq, setFaq] = useState(faqIsOpened);
 
+
   const updateBoard = (index, value) => {
     let copy = board;
     copy[index] = value;
-    setBoard(copy);
+    return setBoard(copy);
+  }
+
+  const cleanBoard = () => {
+    const defaultBoard = new Array(52*7).fill(0);
+    return (setBoard(defaultBoard));
   }
 
   const switchFaq = () => {
