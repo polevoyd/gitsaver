@@ -311,5 +311,6 @@ body button:active {
 }
 
 .example-preview:active {
-  top: 2px;
+  position: relative;
+  top: 1px;
 }
