@@ -65,23 +65,29 @@ body {
 }
 
 .options-wrapper {
-  width: 48px;
+  width: 622px;
   margin: 0 auto;
 }
 
 .options-wrapper .options {
   height: 20px;
   width: 20px;
-  float: left;
   background-color: orangered;
   margin: 2px 2px 2px 2px;
+}
+
+.options-wrapper .options:nth-child(0){
+  float: left;
+}
+
+.options-wrapper .options:nth-child(1){
+  float: right;
 }
 
 .board {
   display: block;
   margin: 0 auto;
-  margin-top: 35px;
-  width: 600px;
+  width: 622px;
 }
 
 .board-cell:hover {
