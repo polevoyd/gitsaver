@@ -5,16 +5,18 @@ import BoardArea from './BoardArea';
 import Results from './Results';
 import Instructions from './Instructions';
 import FAQ from './FAQ';
+import ExamplesBoard from './ExamplesBoard';
 
 const App = () => {
   const currentColor = '#c6e48b'
   const currentBoard = new Array(52*7).fill(0);
   const faqIsOpened = false;
+  const samplesIsOpened = false;
 
   const [color, setColor] = useState(currentColor)
   const [board, setBoard] = useState(currentBoard);
-  const [faq, setFaq] = useState(faqIsOpened);
-
+  const [faq, toggleFaq] = useState(faqIsOpened);
+  const [samples, toggleSamples] = useState(samplesIsOpened);
 
   const updateBoard = (index, value) => {
     let copy = board;
@@ -28,9 +30,13 @@ const App = () => {
   }
 
   const switchFaq = () => {
-    setFaq(!faq);
+    return toggleFaq(!faq);
   }
 
+  const switchSamples = () => {
+    return toggleSamples(!samples)
+  }
+  
   return(
     <div onClick={faq ? switchFaq : null}>
       <Welcome switchFaq={switchFaq} faqIsOn={faq}/>
@@ -44,6 +50,7 @@ const App = () => {
         board={board}/>
         <Instructions/>
         {faq ? <FAQ /> : null}
+        {}
     </div>
   );
 }
