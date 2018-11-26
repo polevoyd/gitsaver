@@ -5,6 +5,10 @@ import ColorSwitch from './ColorSwitch';
 const BoardArea = (props) => {
     return(
         <div className="board-area">
+        <div className="options-wrapper">
+            <div className="options"></div>
+            <div className="options"></div>
+        </div>
             <Board
                 color={props.color}
                 board={props.board}
