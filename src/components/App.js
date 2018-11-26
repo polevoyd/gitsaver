@@ -37,8 +37,13 @@ const App = () => {
     return toggleSamples(!samples)
   }
 
+  const closeAllWindows = () => {
+    toggleFaq(false)
+    toggleSamples(false)
+  }
+
   return(
-    <div onClick={faq ? switchFaq : null}>
+    <div onClick={faq || samples ? closeAllWindows : null}>
       <Welcome switchFaq={switchFaq} faqIsOn={faq}/>
       <BoardArea 
         board={board}

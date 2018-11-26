@@ -165,7 +165,6 @@ body {
   width: 0px;
 }
 
-
 /* instructions */
 
 .instructions {
@@ -242,7 +241,7 @@ body button:active {
 .faq-window {
   width: 80vw;
   height: 70vh;
-  background-color: #d1e0b2;
+  background-color: white;
   position: absolute;
   top: 25%;
   left: 10%;
