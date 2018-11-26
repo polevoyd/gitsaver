@@ -1,5 +1,5 @@
 * {
-  outline: 1px solid lightcoral;
+  /* outline: 1px solid lightcoral; */
 }
 
 /* font-family: 'Orbitron', sans-serif; */
@@ -72,16 +72,17 @@ body {
 .options-wrapper .options {
   height: 20px;
   width: 20px;
-  background-color: orangered;
   margin: 2px 2px 2px 2px;
+  background-color: yellow;
 }
 
-.options-wrapper .options:nth-child(0){
-  float: left;
+.options-wrapper .options:hover {
+  outline: 1px solid orange;
 }
 
 .options-wrapper .options:nth-child(1){
   float: right;
+  background-color: red;
 }
 
 .board {
