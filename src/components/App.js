@@ -38,7 +38,8 @@ const App = () => {
         board={board}
         color={color}
         setColor={setColor}
-        updateBoard={updateBoard}/>
+        updateBoard={updateBoard}
+        cleanBoard={cleanBoard}/>
       <Results 
         board={board}/>
         <Instructions/>

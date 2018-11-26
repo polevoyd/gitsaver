@@ -6,7 +6,7 @@ const BoardArea = (props) => {
     return(
         <div className="board-area">
         <div className="options-wrapper">
-            <div className="options"></div>
+            <div onClick={props.cleanBoard} className="options"></div>
             <div className="options"></div>
         </div>
             <Board
