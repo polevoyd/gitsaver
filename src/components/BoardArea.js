@@ -7,7 +7,7 @@ const BoardArea = (props) => {
         <div className="board-area">
         <div className="options-wrapper">
             <div onClick={props.cleanBoard} className="options"></div>
-            <div className="options"></div>
+            <div className="options" onClick={props.switchSamples}></div>
         </div>
             <Board
                 color={props.color}

@@ -36,7 +36,7 @@ const App = () => {
   const switchSamples = () => {
     return toggleSamples(!samples)
   }
-  
+
   return(
     <div onClick={faq ? switchFaq : null}>
       <Welcome switchFaq={switchFaq} faqIsOn={faq}/>
@@ -45,12 +45,13 @@ const App = () => {
         color={color}
         setColor={setColor}
         updateBoard={updateBoard}
-        cleanBoard={cleanBoard}/>
+        cleanBoard={cleanBoard}
+        switchSamples={switchSamples}/>
       <Results 
         board={board}/>
         <Instructions/>
         {faq ? <FAQ /> : null}
-        {}
+        {samples ? <ExamplesBoard/> : null}
     </div>
   );
 }
