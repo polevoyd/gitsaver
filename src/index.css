@@ -70,6 +70,7 @@ body {
   font-family: 'Noto Sans', sans-serif;
   letter-spacing: 1px;
   display: inline-block;
+  transition: 0.3s;
 }
 
 .options-wrapper .options:hover {
