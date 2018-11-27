@@ -4,19 +4,19 @@ self.__precacheManifest = [
     "url": "/gitsaver/static/js/runtime~main.a42abaff.js"
   },
   {
-    "revision": "d739613c661f8e19b2a6",
-    "url": "/gitsaver/static/js/main.d739613c.chunk.js"
+    "revision": "8202c4aabf852e8539b7",
+    "url": "/gitsaver/static/js/main.8202c4aa.chunk.js"
   },
   {
     "revision": "f441e4f58c8c60719dbc",
     "url": "/gitsaver/static/js/1.f441e4f5.chunk.js"
   },
   {
-    "revision": "d739613c661f8e19b2a6",
-    "url": "/gitsaver/static/css/main.a37680a0.chunk.css"
+    "revision": "8202c4aabf852e8539b7",
+    "url": "/gitsaver/static/css/main.0daab80b.chunk.css"
   },
   {
-    "revision": "62ccc241cf51e06e83e7c1cb4decfe33",
+    "revision": "636063e0eccfdb0c23a82aa33d3d7577",
     "url": "/gitsaver/index.html"
   }
 ];
