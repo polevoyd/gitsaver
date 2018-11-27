@@ -20,7 +20,7 @@ const App = () => {
 
   const updateBoard = (index, value) => {
     let copy = board;
-    copy[index] = value;
+    copy[index] = value;;
     return setBoard(copy);
   }
 
@@ -29,17 +29,21 @@ const App = () => {
     return (setBoard(defaultBoard));
   }
 
+  const setBoardExample  = (newBoard) => {
+    return setBoard(newBoard);
+  }
+
   const switchFaq = () => {
     return toggleFaq(!faq);
   }
 
   const switchSamples = () => {
-    return toggleSamples(!samples)
+    return toggleSamples(!samples);
   }
 
   const closeAllWindows = () => {
-    toggleFaq(false)
-    toggleSamples(false)
+    toggleFaq(false);
+    toggleSamples(false);
   }
 
   return(
@@ -56,7 +60,7 @@ const App = () => {
         board={board}/>
         <Instructions/>
         {faq ? <FAQ /> : null}
-        {samples ? <ExamplesBoard/> : null}
+        {samples ? <ExamplesBoard setBoardExample={setBoardExample}/> : null}
     </div>
   );
 }
