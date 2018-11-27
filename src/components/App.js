@@ -49,7 +49,7 @@ const App = () => {
   return(
     <div onClick={faq || samples ? closeAllWindows : null}>
       <Welcome switchFaq={switchFaq} faqIsOn={faq}/>
-      <textarea>board</textarea>
+      <textarea className="test" value={board}></textarea>
       <BoardArea 
         board={board}
         color={color}
