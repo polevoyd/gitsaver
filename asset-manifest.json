@@ -1,13 +1,13 @@
 {
   "main.css": "/gitsaver/static/css/main.0daab80b.chunk.css",
-  "main.js": "/gitsaver/static/js/main.62c029b1.chunk.js",
-  "main.js.map": "/gitsaver/static/js/main.62c029b1.chunk.js.map",
+  "main.js": "/gitsaver/static/js/main.0c084a25.chunk.js",
+  "main.js.map": "/gitsaver/static/js/main.0c084a25.chunk.js.map",
   "static/js/1.f441e4f5.chunk.js": "/gitsaver/static/js/1.f441e4f5.chunk.js",
   "static/js/1.f441e4f5.chunk.js.map": "/gitsaver/static/js/1.f441e4f5.chunk.js.map",
   "runtime~main.js": "/gitsaver/static/js/runtime~main.a42abaff.js",
   "runtime~main.js.map": "/gitsaver/static/js/runtime~main.a42abaff.js.map",
   "static/css/main.0daab80b.chunk.css.map": "/gitsaver/static/css/main.0daab80b.chunk.css.map",
   "index.html": "/gitsaver/index.html",
-  "precache-manifest.95b34f7ca9119f9eef68aedd6435a037.js": "/gitsaver/precache-manifest.95b34f7ca9119f9eef68aedd6435a037.js",
+  "precache-manifest.df7a7afece1050d59c71ba1778f03a01.js": "/gitsaver/precache-manifest.df7a7afece1050d59c71ba1778f03a01.js",
   "service-worker.js": "/gitsaver/service-worker.js"
 }
