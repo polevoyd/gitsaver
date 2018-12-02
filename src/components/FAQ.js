@@ -14,7 +14,7 @@ const FAQ = () => {
                 </li>
                 <li>
                     <h4>Tips</h4>
-                    <p>Follow instructions on the main page and make sure you have rights to execute commands. To make it easier, just create a new repository for your gitsaver. Then, when you can just delete that repository to clean up a board.</p>
+                    <p>Follow instructions on the main page and make sure you have rights to execute commands. To make it easier, just create a new repository for your gitsaver. Then, when you can just delete that repository to clean up a board. Sometimes it takes up to couple minutes to update calendar.</p>
                 </li>
             </ul>
         </div>
