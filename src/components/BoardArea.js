@@ -14,7 +14,8 @@ const BoardArea = (props) => {
                 board={props.board}
                 updateBoard={props.updateBoard}/>
             <ColorSwitch 
-                setColor={props.setColor}/>
+                setColor={props.setColor}
+                color={props.color}/>
         </div>
     );
 }

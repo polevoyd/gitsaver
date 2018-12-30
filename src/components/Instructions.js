@@ -11,7 +11,7 @@ const Instructions = () => {
                 <li>Enter <span>sh *filename*</span> in terminal to run script. Paste link to repo when prompt</li>
                 <li>Yay!</li>
             </ol>
-            <a className="made-by-polevoy" href="http://www.polevoy.in/" target="_blank">made by polevoy</a>
+            <a className="made-by-polevoy" href="http://www.polevoy.in/">made by polevoy</a>
         </div>
     );
 }
