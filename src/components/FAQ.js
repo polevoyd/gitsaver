@@ -2,7 +2,8 @@ import React from 'react';
 
 const FAQ = () => {
     return(
-        <div className="faq-window" >
+        // appear-l-r appear-r-l
+        <div className={`faq-window ${`appear-l-r`}`} >
             <ul>
                 <li>
                     <h4>What is that?</h4>
