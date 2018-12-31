@@ -1,9 +1,8 @@
 import React from 'react';
 
 const ColorSwitch = (props) => {
-    
+
    const setOrangeOutline = (color) => {
-    // clean previous outline and set a new one
     const cleanOutlines = Array.from(document.getElementsByClassName('color')).forEach(e => e.style.outline = 'none')
     if (color === '#ebedf0') document.getElementById('color5').style.outline = '1px solid orange'
     if (color === '#c6e48b') document.getElementById('color4').style.outline = '1px solid orange'
