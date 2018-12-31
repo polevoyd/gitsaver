@@ -36,6 +36,8 @@ const BoardCell = (props) => {
         }    
     }
 
+    // console.log(props.mouseState)
+
     return(
         <div 
             style={{backgroundColor: numToColor(props.board[props.index])}}

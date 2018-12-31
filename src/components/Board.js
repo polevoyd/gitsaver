@@ -10,7 +10,8 @@ const Board = (props) => {
                 color={props.color}
                 updateBoard={props.updateBoard}
                 key={i.toString() + e.toString()}
-                index={i}>
+                index={i}
+                mouseState={props.mouseState}>
             </BoardCell>
         )
     })
@@ -19,7 +20,6 @@ const Board = (props) => {
         e.preventDefault()
         e.stopPropagation()
         props.changeMouseState(true)
-        console.log('beginning of event')
     }
 
     const mouseHoldEnd = e => props.changeMouseState(false)
