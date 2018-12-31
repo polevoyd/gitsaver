@@ -4,8 +4,8 @@ const ColorSwitch = (props) => {
 
     // clean previous outline and set new one
     const setOrangeOutline = (color) => {
-        const cleanOutlines = Array.from(document.getElementsByClassName('color')).forEach(e => e.style.outline = 'none')
-    
+        Array.from(document.getElementsByClassName('color')).forEach(e => e.style.outline = 'none')
+
         if (color === '#ebedf0') document.getElementById('color5').style.outline = '1px solid orange'
         if (color === '#c6e48b') document.getElementById('color4').style.outline = '1px solid orange'
         if (color === '#7bc96f') document.getElementById('color3').style.outline = '1px solid orange'
