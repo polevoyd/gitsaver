@@ -1,9 +1,11 @@
 import React from 'react';
 
-const FAQ = () => {
+const FAQ = (props) => {
+    
+    const anim = props.faq ? `appear-l-r` :  `appear-r-l`
     return(
         // appear-l-r appear-r-l
-        <div className={`faq-window ${`appear-l-r`}`} >
+        <div className={`faq-window ${anim}`} >
             <ul>
                 <li>
                     <h4>What is that?</h4>

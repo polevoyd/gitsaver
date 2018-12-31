@@ -1,27 +1,29 @@
-import React from 'react';
-import { useState } from 'react';
-import Welcome from './Welcome';
-import BoardArea from './BoardArea';
-import Results from './Results';
-import Instructions from './Instructions';
-import FAQ from './FAQ';
-import ExamplesBoard from './ExamplesBoard';
+import React from 'react'
+import { useState } from 'react'
+import Welcome from './Welcome'
+import BoardArea from './BoardArea'
+import Results from './Results'
+import Instructions from './Instructions'
+import FAQ from './FAQ'
+import ExamplesBoard from './ExamplesBoard'
 
 const App = () => {
   const currentColor = '#c6e48b'
-  const currentBoard = new Array(52*7).fill(0);
-  const faqIsOpened = false;
-  const samplesIsOpened = false;
+  const currentBoard = new Array(52*7).fill(0)
+  const faqIsOpened = false
+  const samplesIsOpened = false
+  const mouseIsActive = false
 
   const [color, setColor] = useState(currentColor)
-  const [board, setBoard] = useState(currentBoard);
-  const [faq, toggleFaq] = useState(faqIsOpened);
-  const [samples, toggleSamples] = useState(samplesIsOpened);
+  const [board, setBoard] = useState(currentBoard)
+  const [faq, toggleFaq] = useState(faqIsOpened)
+  const [samples, toggleSamples] = useState(samplesIsOpened)
+  const [mouseState, toggleMouse] = useState(mouseIsActive)
 
   const updateBoard = (index, value) => {
-    let copy = board;
-    copy[index] = value;;
-    return setBoard(copy);
+    let copy = board
+    copy[index] = value
+    return setBoard(copy)
   }
 
   const cleanBoard = () => {
@@ -46,6 +48,10 @@ const App = () => {
     toggleSamples(false);
   }
 
+  const changeMouseState = (state) => {
+    return toggleMouse(state)
+  }
+
   return(
     <div onClick={faq || samples ? closeAllWindows : null}>
       <Welcome switchFaq={switchFaq} faqIsOn={faq}/>
@@ -56,11 +62,14 @@ const App = () => {
         setColor={setColor}
         updateBoard={updateBoard}
         cleanBoard={cleanBoard}
-        switchSamples={switchSamples}/>
+        switchSamples={switchSamples}
+        mouseState={mouseState}
+        changeMouseState={changeMouseState}
+        />
       <Results 
         board={board}/>
         <Instructions/>
-        {faq ? <FAQ /> : null}
+        <FAQ faq={faq}/>
         {samples ? <ExamplesBoard setBoardExample={setBoardExample}/> : null}
     </div>
   );

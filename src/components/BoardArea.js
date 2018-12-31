@@ -3,6 +3,7 @@ import Board from './Board';
 import ColorSwitch from './ColorSwitch';
 
 const BoardArea = (props) => {
+
     return(
         <div className="board-area">
         <div className="options-wrapper">
@@ -12,7 +13,9 @@ const BoardArea = (props) => {
             <Board
                 color={props.color}
                 board={props.board}
-                updateBoard={props.updateBoard}/>
+                updateBoard={props.updateBoard}
+                mouseState={props.mouseState}
+                changeMouseState={props.changeMouseState}/>
             <ColorSwitch 
                 setColor={props.setColor}
                 color={props.color}/>
