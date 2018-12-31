@@ -248,25 +248,12 @@ body button:active {
   left: 10%;
   border-radius: 10px;
   box-shadow: 0px 5px 15px -5px rgba(0,0,0,0.75);
-  
-}
-
-.appear-left-to-right {
   animation: left-to-right 0.3s cubic-bezier(0.250, 0.500, 0.250, 0.900) both;
-}
-
-.appear-right-to-left {
-  animation: right-to-left 0.3s cubic-bezier(0.250, 0.500, 0.250, 0.900) both;
 }
 
 @keyframes left-to-right {
   0% { transform: translateX(-1000px); opacity: 0; }
   100% { transform: translateX(0); opacity: 1; }
-}
-
-@keyframes right-to-left {
-  0% { transform: translateX(0); opacity: 1; }
-  100% { transform: translateX(-1000px); opacity: 0; }
 }
 
 .faq-window ul {

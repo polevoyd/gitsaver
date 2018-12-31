@@ -46,11 +46,6 @@ const App = () => {
     toggleSamples(false);
   }
 
-  const showHideFaq = faq => {
-    // eslint-disable-next-line no-unused-expressions
-    faq ? 'appear-left-to-right' : 'appear-right-to-left'
-  }
-
   return(
     <div onClick={faq || samples ? closeAllWindows : null}>
       <Welcome switchFaq={switchFaq} faqIsOn={faq}/>
@@ -65,7 +60,7 @@ const App = () => {
       <Results 
         board={board}/>
         <Instructions/>
-        {faq ? <FAQ className={showHideFaq(faq)}/> : null}
+        {faq ? <FAQ /> : null}
         {samples ? <ExamplesBoard setBoardExample={setBoardExample}/> : null}
     </div>
   );
