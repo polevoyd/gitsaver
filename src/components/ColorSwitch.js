@@ -6,12 +6,32 @@ const ColorSwitch = (props) => {
     const setOrangeOutline = (color) => {
         Array.from(document.getElementsByClassName('color')).forEach(e => e.style.outline = 'none')
 
-        if (color === '#ebedf0') document.getElementById('color5').style.outline = '1px solid orange'
-        if (color === '#c6e48b') document.getElementById('color4').style.outline = '1px solid orange'
-        if (color === '#7bc96f') document.getElementById('color3').style.outline = '1px solid orange'
-        if (color === '#239a3b') document.getElementById('color2').style.outline = '1px solid orange'
-        if (color === '#196127') document.getElementById('color1').style.outline = '1px solid orange' 
-   }
+        switch (color) {
+            case '#ebedf0':
+                document.getElementById('color5').style.outline = '1px solid orange'
+                break;
+            
+            case '#c6e48b':
+                document.getElementById('color4').style.outline = '1px solid orange'
+                break;
+            
+            case '#7bc96f':
+                document.getElementById('color3').style.outline = '1px solid orange'
+                break;
+            
+            case '#239a3b':
+                document.getElementById('color2').style.outline = '1px solid orange'
+                break;
+        
+            case '#196127':
+                document.getElementById('color1').style.outline = '1px solid orange'
+                break;
+
+            default:
+                document.getElementById('color5').style.outline = '1px solid orange'
+                break;
+        }
+    }
 
     return(
         <div className="color-switch-area">
