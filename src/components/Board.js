@@ -11,21 +11,17 @@ const Board = (props) => {
                 updateBoard={props.updateBoard}
                 key={i.toString() + e.toString()}
                 index={i}
-                mouseState={props.mouseState}>
+                mouseState={props.mouseState}
+                changeMouseState={props.changeMouseState}>
             </BoardCell>
         )
     })
 
-    const mouseHoldStart = e => {
-        e.preventDefault()
-        e.stopPropagation()
-        props.changeMouseState(true)
-    }
-
-    const mouseHoldEnd = e => props.changeMouseState(false)
+    // end of mouse hold 
+    const mouseHoldEnd = e => props.changeMouseState(false);
     
     return(
-        <div className="board" onMouseDown={e => mouseHoldStart(e)} onMouseUp={e => mouseHoldEnd(e)}>
+        <div className="board" onMouseUp={e => mouseHoldEnd(e)}>
             <ul className="squares">
                 {arrayOfCells}
             </ul> 

@@ -36,13 +36,20 @@ const BoardCell = (props) => {
         }    
     }
 
-    // console.log(props.mouseState)
+    // trigger beginning of mouse hold
+    const mouseHoldStart = e => {
+        e.preventDefault()
+        e.stopPropagation()
+        props.changeMouseState(true)
+    }
 
     return(
         <div 
             style={{backgroundColor: numToColor(props.board[props.index])}}
             className={`board-cell ${props.index}`}
-            onClick={e => props.updateBoard(props.index, colorToNum(props.color))}>
+            onMouseEnter={e => props.mouseState ? props.updateBoard(props.index, colorToNum(props.color)) : null}
+            onClick={e => props.updateBoard(props.index, colorToNum(props.color))}
+            onMouseDown={e => mouseHoldStart(e)}>
         </div>
     );
 }
