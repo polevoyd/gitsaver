@@ -10,7 +10,7 @@ import ExamplesBoard from './ExamplesBoard'
 const App = () => {
   const currentColor = '#c6e48b'
   const currentBoard = new Array(52*7).fill(0)
-  const faqIsOpened = false
+  const faqIsOpened = { default: true, opened: false }
   const samplesIsOpened = false
   const mouseIsActive = false
 
@@ -36,7 +36,9 @@ const App = () => {
   }
 
   const switchFaq = () => {
-    return toggleFaq(!faq);
+    console.log(faq)
+    
+    return toggleFaq({ default: false, opened: !faq.opened});
   }
 
   const switchSamples = () => {
@@ -53,8 +55,9 @@ const App = () => {
   }
 
   return(
-    <div onClick={faq || samples ? closeAllWindows : null}>
-      <Welcome switchFaq={switchFaq} faqIsOn={faq}/>
+    <div onClick={faq || samples ? closeAllWindows : null}
+    >
+      <Welcome switchFaq={switchFaq} faqIsOn={faq.opened}/>
       {/* <textarea className="test" value={board}></textarea> */}
       <BoardArea 
         board={board}
@@ -66,10 +69,9 @@ const App = () => {
         mouseState={mouseState}
         changeMouseState={changeMouseState}
         />
-      <Results 
-        board={board}/>
+      <Results board={board}/>
         <Instructions/>
-        {faq ? <FAQ faq={faq}/> : null}
+        <FAQ faq={faq}/>
         {samples ? <ExamplesBoard setBoardExample={setBoardExample}/> : null}
     </div>
   );
