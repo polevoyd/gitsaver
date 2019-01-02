@@ -4,9 +4,6 @@ const FAQ = (props) => {
     
     const anima = props.faq.default ? `hidden` : props.faq.opened ? `appear-l-r` : `appear-r-l`
 
-
-
-    
     return(
         <div className={`faq-window ${anima}`} >
             <ul>

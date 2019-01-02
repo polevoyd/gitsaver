@@ -36,8 +36,6 @@ const App = () => {
   }
 
   const switchFaq = () => {
-    console.log(faq)
-    
     return toggleFaq({ default: false, opened: !faq.opened});
   }
 
@@ -55,7 +53,7 @@ const App = () => {
   }
 
   return(
-    <div onClick={faq || samples ? closeAllWindows : null}
+    <div onClick={faq.opened || samples ? closeAllWindows : null}
     >
       <Welcome switchFaq={switchFaq} faqIsOn={faq.opened}/>
       {/* <textarea className="test" value={board}></textarea> */}
