@@ -69,7 +69,7 @@ const App = () => {
       <Results 
         board={board}/>
         <Instructions/>
-        <FAQ faq={faq}/>
+        {faq ? <FAQ faq={faq}/> : null}
         {samples ? <ExamplesBoard setBoardExample={setBoardExample}/> : null}
     </div>
   );

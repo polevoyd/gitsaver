@@ -2,9 +2,12 @@ import React from 'react';
 
 const FAQ = (props) => {
     
-    const anim = props.faq ? `appear-l-r` :  `appear-r-l`
+    const anim = props.faq ? `appear-l-r` : `appear-r-l`
+    // const removeHidden = document.querySelector(`.faq-window`) ? document.querySelector(`.faq-window`).classList.add(`appear-r-l`) : null
+    
+    // ${anim}
+
     return(
-        // appear-l-r appear-r-l
         <div className={`faq-window ${anim}`} >
             <ul>
                 <li>
